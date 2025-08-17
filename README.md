@@ -36,39 +36,39 @@ A modular, scalable, and efficient web scraping framework with proxy rotation, u
 scraper-project/
 │
 ├── config/
-│   ├── settings.py          # Global configuration
-│   ├── proxies.txt          # Proxy server list
-│   └── user_agents.txt      # User-Agent rotation list
+│   ├── settings.py             # Global configuration
+│   ├── proxies.txt             # Proxy server list
+│   └── user_agents.txt         # User-Agent rotation list
 │
 ├── data/
-│   ├── raw/                 # Raw scraped data
-│   ├── processed/           # Cleaned and processed data
-│   └── logs/                # Application logs
+│   ├── raw/                    # Raw scraped data
+│   ├── processed/              # Cleaned and processed data
+│   └── logs/                   # Application logs
 │
 ├── src/
 │   ├── __init__.py
-│   ├── main.py              # Main entry point
-│   ├── scraper.py           # Core async scraping engine
-│   ├── parser.py            # Data parsing and cleaning
-│   ├── proxy_manager.py     # Proxy rotation management
-│   ├── user_agent_manager.py # User-agent rotation
-│   ├── storage.py           # Data storage (JSON/CSV/SQLite)
-│   ├── cache.py             # Caching system
-│   ├── scheduler.py         # Task scheduling
-│   ├── utils.py             # Utility functions
-│   └── logger.py            # Elegant logging system
+│   ├── main.py                 # Main entry point
+│   ├── scraper.py              # Core async scraping engine
+│   ├── parser.py               # Data parsing and cleaning
+│   ├── proxy_manager.py        # Proxy rotation management
+│   ├── user_agent_manager.py   # User-agent rotation
+│   ├── storage.py              # Data storage (JSON/CSV/SQLite)
+│   ├── cache.py                # Caching system
+│   ├── scheduler.py            # Task scheduling
+│   ├── utils.py                # Utility functions
+│   └── logger.py               # Elegant logging system
 │
 ├── tests/
-│   ├── test_scraper.py      # Scraper tests
-│   ├── test_parser.py       # Parser tests
-│   └── test_storage.py      # Storage tests
+│   ├── test_scraper.py         # Scraper tests
+│   ├── test_parser.py          # Parser tests
+│   └── test_storage.py         # Storage tests
 │
 ├── notebooks/
-│   └── analysis.ipynb       # Data analysis examples
+│   └── analysis.ipynb          # Data analysis examples
 │
-├── requirements.txt         # Python dependencies
-├── README.md               # This file
-└── .env.example            # Environment variables template
+├── requirements.txt            # Python dependencies
+├── README.md                   # This file
+└── .env.example                # Environment variables template
 ```
 
 ## 🛠️ Installation
@@ -125,13 +125,13 @@ python -m src.main [OPTIONS]
 
 Options:
   --mode {scrape,interactive,schedule}  Running mode (default: scrape)
-  --format {json,csv,sqlite}           Output format
-  --query TEXT                         Search query for scraping
-  --user-id TEXT                       User ID to scrape
-  --max-items INTEGER                  Maximum items to scrape (default: 100)
-  --no-cache                          Disable caching
-  --clear-cache                       Clear cache before starting
-  --help                              Show help message
+  --format {json,csv,sqlite}            Output format
+  --query TEXT                          Search query for scraping
+  --user-id TEXT                        User ID to scrape
+  --max-items INTEGER                   Maximum items to scrape (default: 100)
+  --no-cache                            Disable caching
+  --clear-cache                         Clear cache before starting
+  --help                                Show help message
 ```
 
 ## 💻 Usage Examples
@@ -258,7 +258,7 @@ The scraper includes a real-time dashboard showing:
 │ Success Rate           │ 96.2%                  │
 │ Items Saved            │ 1,150                  │
 │ Runtime                │ 0:15:42                │
-│ Current Proxy          │ 192.168.1.100:8080    │
+│ Current Proxy          │ 192.168.1.100:8080     │
 └────────────────────────┴────────────────────────┘
 ```
 
